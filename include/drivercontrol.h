@@ -35,3 +35,7 @@ void buttonR1Pressed();
 void buttonR1Released();
 void buttonR2Pressed();
 void buttonR2Released();
+void axis1Changed();
+void axis2Changed();
+void axis3Changed();
+void axis4Changed();

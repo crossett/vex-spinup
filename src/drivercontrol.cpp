@@ -30,6 +30,10 @@ void registerControllerCallbackFunctions() {
   Controller1.ButtonR1.released(buttonR1Released);
   Controller1.ButtonR2.pressed(buttonR2Pressed);
   Controller1.ButtonR2.released(buttonR2Released);
+  Controller1.Axis1.changed(axis1Changed);
+  Controller1.Axis2.changed(axis2Changed);
+  Controller1.Axis3.changed(axis3Changed);
+  Controller1.Axis4.changed(axis4Changed);
 }
 
 // Button A
@@ -148,6 +152,24 @@ void buttonR2Pressed()
   Brain.Screen.print("Event has occurred");
 }
 void buttonR2Released()
+{
+  Brain.Screen.print("Event has occurred");
+}
+
+// Axes
+void axis1Changed()
+{
+  Brain.Screen.print("Event has occurred");
+}
+void axis2Changed()
+{
+  Brain.Screen.print("Event has occurred");
+}
+void axis3Changed()
+{
+  Brain.Screen.print("Event has occurred");
+}
+void axis4Changed()
 {
   Brain.Screen.print("Event has occurred");
 }
