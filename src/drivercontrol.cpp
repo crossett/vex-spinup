@@ -2,7 +2,12 @@
 #include "drivercontrol.h"
 
 void drivercontrol() {
+  // Driver Control setup
 
+  // Handle adaptive driver control
+  while (true) {
+    wait(.001, seconds);
+  }
 }
 
 void registerControllerCallbackFunctions() {
