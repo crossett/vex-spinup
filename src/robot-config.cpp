@@ -9,14 +9,14 @@ brain  Brain;
 
 // VEXcode device constructors
 controller Controller1 = controller(primary);
-motor DriveLF = motor(PORT1, ratio6_1, true);
-motor DriveLM = motor(PORT2, ratio6_1, true);
-motor DriveLB = motor(PORT3, ratio6_1, true);
-motor DriveRF = motor(PORT9, ratio6_1, false);
-motor DriveRM = motor(PORT8, ratio6_1, false);
-motor DriveRB = motor(PORT7, ratio6_1, false);
-motor LiftMotorA = motor(PORT4, ratio36_1, false);
-motor LiftMotorB = motor(PORT6, ratio36_1, true);
+motor DriveLF = motor(PORT1, ratio6_1, false);
+motor DriveLM = motor(PORT2, ratio6_1, false);
+motor DriveLB = motor(PORT3, ratio6_1, false);
+motor DriveRF = motor(PORT9, ratio6_1, true);
+motor DriveRM = motor(PORT8, ratio6_1, true);
+motor DriveRB = motor(PORT7, ratio6_1, true);
+motor LiftMotorA = motor(PORT6, ratio36_1, true);
+motor LiftMotorB = motor(PORT4, ratio36_1, false);
 motor_group Lift = motor_group(LiftMotorA, LiftMotorB);
 digital_out RearSolonoid = digital_out(Brain.ThreeWirePort.H);
 digital_out FrontSolonoid = digital_out(Brain.ThreeWirePort.G);
